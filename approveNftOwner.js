@@ -1,6 +1,6 @@
 require('dotenv').config()
 const Web3 = require('web3');
-const web3 = new Web3('https://rpc-mumbai.maticvigil.com/v1/1ee06372b8094170ccf6da077d86af194983e18f');
+const web3 = new Web3(process.env.RPC_URL);
 
 const getGasPrice = async () => {
     const gasPrice = await web3.eth.getGasPrice();
