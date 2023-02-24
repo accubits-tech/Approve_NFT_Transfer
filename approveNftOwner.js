@@ -28,7 +28,7 @@ const approveNftTransferOnBehalfOfOwner = async (nftSpenderWallet, tokenId, nonc
                 value: 0,
                 gasPrice: gasPrice,
                 nonce: nonce,
-                gas: 40000
+                gas: 60000
             },
             privateKey
         );
